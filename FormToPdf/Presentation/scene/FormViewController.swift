@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FormViewController: UIViewController {
 
+    weak var coordinator : MainCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = .blue
     }
 
 
