@@ -61,7 +61,6 @@ class QuestionCellDetailView: UIView, UITextViewDelegate {
         stackView.spacing = 5
         stackView.alignment = .fill
         stackView.distribution = .fill
-        stackView.backgroundColor = .gray
         return stackView
     }()
     
@@ -87,7 +86,6 @@ class QuestionCellDetailView: UIView, UITextViewDelegate {
         stackView.addArrangedSubview(collectionView)
         descriptionTxt.delegate = self
         setConstraints()
-        
     }
     
     func setConstraints()  {

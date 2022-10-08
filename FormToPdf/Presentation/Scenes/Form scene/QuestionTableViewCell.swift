@@ -58,9 +58,6 @@ class QuestionTableViewCell: UITableViewCell {
         containerView.addArrangedSubview(cellView)
         containerView.addArrangedSubview(detailView)
         
-
-
-        
         cellView.translatesAutoresizingMaskIntoConstraints = false
         detailView.translatesAutoresizingMaskIntoConstraints = false
         
