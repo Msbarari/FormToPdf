@@ -39,6 +39,8 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate  {
     func start() {
         
         let vc = FormViewController()
+        vc.generateQuestionUseCase = GenerateQuestionsUseCase(plistService: PlistService("Questions")!)
+        vc.viewModel = FormViewModel(repository: QuestionLocalRepository())
         navigationController = UINavigationController()
         navigationController.delegate = self
         vc.coordinator = self
